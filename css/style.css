@@ -1,0 +1,563 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Cuprum, Arial, sans-serif;
+}
+.header{
+    background: fixed url("../img/Become.jpg") no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    min-height: 500px;
+}
+.header__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+.header__info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.header__text{
+    font-size: 40px;
+    width: 60%;
+    text-align: center;
+}
+.header__photo{
+    text-align: center;
+    width: 40%;
+}
+.header__photo img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px #ddd;
+}
+.header__photo p{
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: .5s;
+}
+.header__photo img:hover + p{
+    opacity: 1;
+    transform: translateY(0);
+}
+.header .order{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    color: #ffffff;
+    margin: auto;
+}
+main{
+    position: relative;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+    max-width: 1170px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.info__title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #1ab798;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #000;
+}
+.info__img{
+    width: 35%;
+    text-align: right;
+}
+.info__img img{
+    max-width: 80%;
+    height: auto;
+}
+.info__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+}
+.info__wrapper ul{
+    padding: 0;
+    list-style: none;
+    font-size: 26px;
+    line-height: 40px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.info__wrapper li{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    text-transform: none;
+}
+.info__wrapper li:first-child{
+    margin-top: 10px;
+}
+.info__wrapper li:nth-child(even){
+    color: #1ab798;
+}
+.info__wrapper > div{
+    width: 33%;
+}
+.skills{
+    width: 60%;
+    /*margin: auto;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills__item{
+    width: 48%;
+    margin-bottom: 15px;
+}
+.skills__title{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 40px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.skills__progress {
+    height: 3px;
+    border: 1px solid #009dda;
+    /*padding: 2px;*/
+    position: relative;
+    margin-left: 60px;
+}
+.skills__progress::before{
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/sprite.png") no-repeat;
+    width: 52px;
+    height: 52px;
+}
+.skills__html .skills__progress::before{
+    background-position: -5px -5px;
+}
+.skills__css .skills__progress::before{
+    background-position: 2px -245px;
+}
+.skills__js .skills__progress::before{
+    background-position: -5px -486px;
+}
+.skills__photoshop .skills__progress::before{
+    background-position: 0 -48px;
+    background-size: 50px;
+}
+.skills__git .skills__progress::before{
+    background-position: 0 -246px;
+    background-size: 50px;
+}
+.skills__gulp .skills__progress::before{
+    background-position: -5px -366px;
+}
+.skills__bootstrap .skills__progress::before{
+    background-position: -5px -185px;
+}
+.skills__jquery .skills__progress::before{
+    background-position: -5px -424px;
+}
+.skills__wp .skills__progress::before{
+    background-position: -5px -125px;
+}
+.skills__less .skills__progress::before{
+    background-position: -5px -544px;
+}
+.skills__line {
+    height: 2px;
+    background: #009dda;
+    width: 0;
+    transition: 1s;
+}
+.skills__name {
+    text-align: right;
+    font-size: 13px;
+    line-height: 20px;
+    color: #444444;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.skills__name span{
+    padding-left: 30px;
+    color: red;
+}
+
+.portfolio{
+    /*padding: 100px 0;*/
+    margin: 100px 0;
+    position: relative;
+}
+.portfolio__title{
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #1ab798;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #000;
+}
+.slider__items{
+    display: flex;
+    justify-content: space-between;
+}
+.slider__item{
+    width: 30%;
+    margin: 0 60px;
+    height: 300px;
+    transition: .5s;
+    position: relative;
+}
+.slider__item img{
+    width: 100%;
+    max-width: 250px;
+    transition: .5s;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .84);
+}
+.slider__item:focus{
+    outline: none;
+}
+.slider__item a{
+    position: absolute;
+    top: 20px;
+    font-size: 22px;
+    color: #000000;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+.slider__item a:hover{
+    color: darkcyan;
+}
+.slider__item:hover img{
+    transform: translateY(20%);
+}
+.slider__item a:focus{
+    outline: none;
+}
+.slider__btn .slick-arrow{
+    width: 50px;
+    height: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.slider__btn .slick-arrow:hover{
+    background-color: rgba(0, 0, 0, .7);
+    outline: none;
+}
+.slider__btn .slick-arrow:hover::before{
+    border-color: red;
+}
+.slider__btn .slick-arrow:focus{
+    outline: none;
+}
+.slider__btn .slick-next{
+    right: 0;
+}
+.slider__btn .slick-prev{
+    left: 0;
+}
+.slider__btn .slick-prev::before{
+    content: '';
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: .5s;
+}
+.slider__btn .slick-next::before{
+    content: '';
+    position: absolute;
+    right: 55%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: translate(40%, -50%) rotate(-45deg);
+}
+
+.footer{
+    background: url("../img/footer.jpg") no-repeat center top;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0;
+}
+.footer__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+.footer__contacts{
+    position: relative;
+    z-index: 10;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: auto;
+}
+.footer__contacts a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+a.order{
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(90deg, transparent 5px, #004425 100px, #82C341 100%);
+    transition: .5s;
+    width: 400px;
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    display: block;
+    color: #fff;
+}
+a.order:hover{
+    background: linear-gradient(90deg, transparent 5px, #008145 100px, #539117 100%);
+    color: #000000;
+    transition: .5s;
+    text-decoration: none;
+}
+.footer__title{
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto 50px;
+    width: 100%;
+    padding: 0 25%;
+}
+
+/*modal windows*/
+
+.modal-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.close{
+    position: absolute;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+.modal-btn{
+    display: inline-block;
+    color: #333333;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.modal-btn:hover{
+    background-color: #333;
+    color: #ffffff;
+    text-decoration: none;
+}
+.modal-dialog{
+    width: 90%;
+    margin: auto;
+}
+.work{
+    display: flex;
+    justify-content: space-between;
+}
+.work__img,
+.work__text{
+    width: 47%;
+}
+
+@media (max-width: 991px) {
+    .slider__item{
+        margin: 0 20px;
+        height: 300px;
+    }
+    .info{
+        padding: 50px 30px;
+    }
+    .footer{
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__text,
+    .header__photo{
+        width: 100%;
+    }
+    .header__text{
+        order: 2;
+        font-size: 24px;
+    }
+    .header .order{
+        bottom: 10px;
+    }
+    .info__img{
+        display: none;
+    }
+    .skills{
+        width: 100%;
+    }
+    .footer__title{
+        font-size: 20px;
+    }
+}
+@media (max-width: 579px) {
+    .info{
+        padding: 50px 20px;
+    }
+    .header__photo img{
+        width: 200px;
+        height: 200px;
+    }
+    .order{
+        width: 250px !important;
+    }
+    .footer__contacts{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__contacts a{
+        margin-bottom: 10px;
+    }
+    .info__wrapper{
+        flex-direction: column;
+    }
+    .info__wrapper > div{
+        width: 100%;
+    }
+    .skills__name{
+        font-size: 10px;
+    }
+    .skills__name span{
+        padding-left: 10px;
+    }
+}
+
+#application {
+    width: 475px;
+    margin: 0 auto;
+}
+
+/*Стили полей для ввода*/
+#applicationName, #applicationEmail, #applicationTelephone {
+    width: 100%;
+    height: 73px;
+    background: none;
+    margin-top: 25px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+/*Стили полей при клике по ним*/
+#applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus {
+    border: 1px solid #30ad64;
+}
+
+/*Стили текста, выводящегося в placeholder*/
+::-webkit-input-placeholder {
+    color: #efefef;
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+::-moz-placeholder  {
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}  /* Firefox 19+ */
+
+:-moz-placeholder {
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}  /* Firefox 18- */
+
+:-ms-input-placeholder {
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+::placeholder {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+/*Стили для кнопки*/
+.applicationButton {
+    margin-top: 25px;
+    background: #30ad64;
+    border: none;
+    width: 100%;
+    height: 73px;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+    /*    transition: .6s;*/
+}
+.applicationButton:hover {
+    background: #d68c18;
+    /*    transition: .6s;*/
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/pink-style.css">
+</head>
+<body>
+    <header class="page-header page-header--inner">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="page-header__bg"></div>
+            <div class="page-header__logo">
+                <a href="index.html">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/pink-img/logo-desktop.png">
+                        <source media="(min-width: 768px)"
+                                srcset="img/pink-img/logo-tablet.png">
+                        <img src="img/pink-img/logo-mobile.png" alt="логотип">
+                    </picture>
+                </a>
+            </div>
+            <button type="button" class="main-nav__toggle">Відкрити меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav-items">
+                    <li class="main-nav__item">
+                        <a href="pink.html">Главная</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--active">
+                        <a href="#">Фотографии</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="pink-form.html">Конкурс</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h2 class="page-header__title">Фотографии<br>
+            пользователей</h2>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи!
+                Видите, как не хватает ваших?</div>
+            <img class="gallery__photo gallery__photo--main" src="img/pink-img/panorama-tablet.jpg" alt="">
+            <aside class="gallery-item gallery-item--main">
+                <div class="gallery-item__wrapper">
+                    <p class="gallery-item__text">
+                        <b>Анна</b>
+                        <span>(5 минут назад)</span>
+                    </p>
+                    <p class="gallery-item__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+                    <div class="like-block like-block--main">
+                        <p>
+                            <span class="like-block__text">Нравится:</span>
+                            <span class="like-block__number">215</span>
+                            <button class="like-block__btn like-block__btn--main"></button>
+                        </p>
+                    </div>
+                </div>
+            </aside>
+            <div class="gallery-items">
+                <aside class="gallery-item">
+                    <picture>
+                        <source media="(min-width: 1200px"
+                                srcset="img/pink-img/photo-1-desktop.jpg">
+                        <source media="(min-width: 500px"
+                                srcset="img/pink-img/photo-1-tablet.jpg">
+                        <img class="gallery__photo" src="img/pink-img/photo-1-mobile.jpg" alt="">
+                    </picture>
+                    <div class="gallery-item__wrapper">
+                        <p class="gallery-item__text">
+                            <b>Левон</b>
+                            <span>(5 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                        <div class="like-block">
+                            <p>
+                                <span class="like-block__text">Нравится:</span>
+                                <span class="like-block__number">215</span>
+                                <button class="like-block__btn"></button>
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="gallery-item">
+                    <picture>
+                        <source media="(min-width: 1200px"
+                                srcset="img/pink-img/photo-2-desktop.jpg">
+                        <source media="(min-width: 500px"
+                                srcset="img/pink-img/photo-2-tablet.jpg">
+                        <img class="gallery__photo" src="img/pink-img/photo-2-mobile.jpg" alt="">
+                    </picture>
+                    <div class="gallery-item__wrapper">
+                        <p class="gallery-item__text">
+                            <b>Антон</b>
+                            <span>(12 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">Соседи будут рады!</p>
+                        <div class="like-block">
+                            <p>
+                                <span class="like-block__text">Нравится:</span>
+                                <span class="like-block__number">215</span>
+                                <button class="like-block__btn"></button>
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="gallery-item">
+                    <picture>
+                        <source media="(min-width: 1200px"
+                                srcset="img/pink-img/photo-3-desktop.jpg">
+                        <source media="(min-width: 500px"
+                                srcset="img/pink-img/photo-3-tablet.jpg">
+                        <img class="gallery__photo" src="img/pink-img/photo-3-mobile.jpg" alt="">
+                    </picture>
+                    <div class="gallery-item__wrapper">
+                        <p class="gallery-item__text">
+                            <b>Борис</b>
+                            <span>(20 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                        <div class="like-block">
+                            <p>
+                                <span class="like-block__text">Нравится:</span>
+                                <span class="like-block__number">215</span>
+                                <button class="like-block__btn"></button>
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="gallery-item">
+                    <picture>
+                        <source media="(min-width: 1200px"
+                                srcset="img/pink-img/photo-4-desktop.jpg">
+                        <source media="(min-width: 500px"
+                                srcset="img/pink-img/photo-4-tablet.jpg">
+                        <img class="gallery__photo" src="img/pink-img/photo-4-mobile.jpg" alt="">
+                    </picture>
+                    <div class="gallery-item__wrapper">
+                        <p class="gallery-item__text">
+                            <b>Сергей</b>
+                            <span>(25 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">Самая кубанская в мире!</p>
+                        <div class="like-block">
+                            <p>
+                                <span class="like-block__text">Нравится:</span>
+                                <span class="like-block__number">215</span>
+                                <button class="like-block__btn"></button>
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="gallery-item">
+                    <picture>
+                        <source media="(min-width: 1200px"
+                                srcset="img/pink-img/photo-5-desktop.jpg">
+                        <source media="(min-width: 500px"
+                                srcset="img/pink-img/photo-5-tablet.jpg">
+                        <img class="gallery__photo" src="img/pink-img/photo-5-mobile.jpg" alt="">
+                    </picture>
+                    <div class="gallery-item__wrapper">
+                        <p class="gallery-item__text">
+                            <b>Максим</b>
+                            <span>(40 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">Где снег-то?</p>
+                        <div class="like-block">
+                            <p>
+                                <span class="like-block__text">Нравится:</span>
+                                <span class="like-block__number">215</span>
+                                <button class="like-block__btn"></button>
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="gallery-item">
+                    <picture>
+                        <source media="(min-width: 1200px"
+                                srcset="img/pink-img/photo-6-desktop.jpg">
+                        <source media="(min-width: 500px"
+                                srcset="img/pink-img/photo-6-tablet.jpg">
+                        <img class="gallery__photo" src="img/pink-img/photo-6-mobile.jpg" alt="">
+                    </picture>
+                    <div class="gallery-item__wrapper">
+                        <p class="gallery-item__text">
+                            <b>Надежда</b>
+                            <span>(45 часов назад)</span>
+                        </p>
+                        <p class="gallery-item__text">Всем GM и взаимные лайки!</p>
+                        <div class="like-block">
+                            <p>
+                                <span class="like-block__text">Нравится:</span>
+                                <span class="like-block__number">215</span>
+                                <button class="like-block__btn"></button>
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="photo-editor">
+            <div class="photo-editor__title">Затмите их всех!
+                Выкладывайте все, что накопилось в телефоне!</div>
+            <div class="photo-editor__wrapper">
+
+                <div class="photo-editor__user-photo">
+                    <img src="img/pink-img/photo-editor.jpg" alt="" class="photo-editor__photo">
+                </div>
+
+                <div class="editors-block">
+
+                    <div class="editors-block__btn">
+                        <button class="mobile-btn mobile-btn__crop mobile-btn__crop--active"></button>
+                        <button class="mobile-btn mobile-btn__fill"></button>
+                        <button class="mobile-btn mobile-btn__contrast"></button>
+                    </div>
+
+                    <div class="editors-block__№1" id="editors-block__№1">
+                        <div class="mobile-btn mobile-btn__crop mobile-btn__crop--active hide"></div>
+                        <div class="scale"></div>
+                        <div class="toggle toggle1"></div>
+                        <hr>
+                    </div>
+
+                    <div class="editors-block__№2" id="editors-block__№2">
+                        <div class="mobile-btn mobile-btn__fill hide"></div>
+                        <div class="scale"></div>
+                        <div class="toggle toggle2"></div>
+                        <hr>
+                    </div>
+
+                    <div class="editors-block__№3" id="editors-block__№3">
+                        <div class="mobile-btn mobile-btn__contrast hide"></div>
+                        <div class="scale"></div>
+                        <div class="toggle toggle3"></div>
+                        <hr>
+                    </div>
+
+                    <div class="photo-editors__btn-block">
+                        <button type="button" class="photo-editors__btn">Запостить</button>
+                        <button type="button" class="photo-editors__btn photo-editors__btn--unavailable" disabled>Отмена</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer footer--inner">
+        <div class="footer__logo">
+            <a href="pink.html"><img src="img/pink-img/footer-logo.png" alt="">PINK</a>
+        </div>
+        <div class="footer__social">
+            <a href="" class="social-link social-link-twitter">ми в твитере</a>
+            <a href="" class="social-link social-link-fb">ми в фейсбуке</a>
+            <a href="" class="social-link social-link-youtube">ми в ютубе</a>
+        </div>
+        <div class="footer__designed-by">
+            <a href="http://htmlacademy.ru" target="_blank">
+                <p>Разработано<span></span></p>
+            </a>
+        </div>
+    </footer>
+
+<script src="js/pink.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Барбершоп "Бородинский"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/barbershop-style.css">
+</head>
+<body>
+<header class="page-header">
+    <h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская классика</h1>
+    <div class="page-header__logo">
+        <picture>
+            <source media="(min-width: 1200px")
+                    srcset="img/barbershop-img/logo-desktop.png">
+            <source media="(min-width: 768px")
+                    srcset="img/barbershop-img/logo-tablet.png">
+            <img src="img/barbershop-img/logo-mobile.png" alt="logo">
+        </picture>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button type="button" class="main-nav__toggle">Открить меню</button>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav-items">
+                <li class="main-nav__item">
+                    <a href="barbershop.html">Главная</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                    <a href="#">Наши работи</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="barbershop-form.html">Записаться</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="">Контакти</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="">HTML Academy</a>
+                </li>
+            </ul>
+            <ul class="main-nav__user-item">
+                <li class="main-nav__user-item">
+                    <a href="" class="main-nav__user-login" title="Войти">Вход</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="works">
+        <h1 class="works__title">наши работы</h1>
+        <a href="index.html" class="to-main-page">На главную</a>
+        <div class="works__work works__work--best">
+            <div class="works__author-foto">
+                <picture>
+                    <source media="(min-width: 1200px")
+                            srcset="img/barbershop-img/work1-desktop.jpg">
+                    <source media="(min-width: 768px")
+                            srcset="img/barbershop-img/work1-tablet.jpg">
+                    <img src="img/barbershop-img/work1-mobile.jpg" alt="">
+                </picture>
+            </div>
+            <blockquote class="works__desc">
+                <cite class="works__author--name">Лжепётр Мчиславский</cite>
+                <p>Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+                <ul class="works__servise-list">
+                    <li class="works__service-item works__servise-item--cut">Стрижка</li>
+                    <li class="works__service-item works__servise-item--beard">Бритье</li>
+                    <li class="works__service-item works__servise-item--mustache">Уси</li>
+                </ul>
+            </blockquote>
+        </div>
+        <div class="works__work">
+            <div class="works__author-foto">
+                <picture>
+                    <source media="(min-width: 1200px")
+                            srcset="img/barbershop-img/work2-desktop.jpg">
+                    <source media="(min-width: 768px")
+                            srcset="img/barbershop-img/work2-tablet.jpg">
+                    <img src="img/barbershop-img/work2-mobile.jpg" alt="">
+                </picture>
+            </div>
+            <blockquote class="works__desc">
+                <cite class="works__author--name">Саша Мальцев</cite>
+                <p>Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
+                <ul class="works__servise-list">
+                    <li class="works__service-item works__servise-item--cut">Стрижка</li>
+                </ul>
+            </blockquote>
+        </div>
+        <div class="works__work">
+            <div class="works__author-foto">
+                <picture>
+                    <source media="(min-width: 1200px")
+                            srcset="img/barbershop-img/work3-desktop.jpg">
+                    <source media="(min-width: 768px")
+                            srcset="img/barbershop-img/work3-tablet.jpg">
+                    <img src="img/barbershop-img/work3-mobile.jpg" alt="">
+                </picture>
+            </div>
+            <blockquote class="works__desc">
+                <cite class="works__author--name">Владимир Иваныч</cite>
+                <p>К зимнему сезону — готов!</p>
+                <ul class="works__servise-list">
+                    <li class="works__service-item works__servise-item--beard">Бритье</li>
+                    <li class="works__service-item works__servise-item--mustache">Уси</li>
+                </ul>
+            </blockquote>
+        </div>
+        <div class="works__work">
+            <div class="works__author-foto">
+                <picture>
+                    <source media="(min-width: 1200px")
+                            srcset="img/barbershop-img/work4-desktop.jpg">
+                    <source media="(min-width: 768px")
+                            srcset="img/barbershop-img/work4-tablet.jpg">
+                    <img src="img/barbershop-img/work4.jpg" alt="">
+                </picture>
+            </div>
+            <blockquote class="works__desc">
+                <cite class="works__author--name">Винстон Синий</cite>
+                <p>Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+                <ul class="works__servise-list">
+                    <li class="works__service-item works__servise-item--cut">Стрижка</li>
+                </ul>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="price">
+        <h2 class="price__title">Прейскурант</h2>
+        <table class="price__price-list">
+            <tr>
+                <td class="col-1">1</td>
+                <td class="col-2">Классиaческая стрижка</td>
+                <td class="col-3"><span class="price__bracket">(</span>с мытьём головы<span class="price__bracket">)</span></td>
+                <td class="col-4">1 500 руб.</td>
+            </tr>
+            <tr>
+                <td class="col-1">2</td>
+                <td class="col-2">Современный вариант</td>
+                <td class="col-3"><span class="price__bracket">(</span>с мытьём головы<span class="price__bracket">)</span></td>
+                <td class="col-4">1 500 руб.</td>
+            </tr>
+            <tr>
+                <td class="col-1">3</td>
+                <td class="col-2">Индивидуальный подход</td>
+                <td class="col-3"><span class="price__bracket">(</span>с мытьём головы<span class="price__bracket">)</span></td>
+                <td class="col-4">2 000 руб.</td>
+            </tr>
+            <tr>
+                <td class="col-1">4</td>
+                <td class="col-2">Бритьё бороды</td>
+                <td class="col-3"><span class="price__bracket">(</span>без мытья<span class="price__bracket">)</span></td>
+                <td class="col-4">500 руб.</td>
+            </tr>
+            <tr>
+                <td class="col-1">5</td>
+                <td class="col-2">Бритьё головы</td>
+                <td class="col-3"><span class="price__bracket">(</span>с мытьём головы<span class="price__bracket">)</span></td>
+                <td class="col-4">1 000 руб.</td>
+            </tr>
+        </table>
+        <p class="price__discount">C 10:00 до 14:00 скидка 20%</p>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <p class="page-footer__contacts">
+            <b>Барбершоп Бородинский</b><br>
+            г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+            <a href="tel:+7 (812) 555-66-66">
+                <span class="page-footer__contacts--hidden">Тел.</span>+7 (812) 555-66-66</a>
+        </p>
+
+        <p class="page-footer__social">
+            <span class="page-footer__friendshop">Давайте дружить!</span>
+            <span class="social-links">
+                    <a href="" class="social-link social-link--vk">ми в контакте</a>
+                    <a href="" class="social-link social-link--fb">ми в фейсбуке</a>
+                    <a href="" class="social-link social-link--insta">ми в инстаграм</a>
+                </span>
+        </p>
+
+        <p class="page-footer__copyright">
+            Разработано:<br>
+            <a href="" class="btn page-footer__copyright-link">HTML ACADEMY</a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal-content">
+    <div class="modal-content__wrapper">
+        <h2 class="modal-content__tittle">ЛИЧНЫЙ КАБИНЕТ</h2>
+        <p>Введите свой логин и пароль, чтобы войти</p>
+        <form action="" class="modal-content__login-form">
+            <input class="modal-content__field" type="text" name="login" placeholder="Логин">
+            <input class="modal-content__field" type="password" name="password" placeholder="Пароль">
+            <label for="modal-content__remember" class="modal-content__remember">
+                <input class="modal-content__checkbox" type="checkbox" id="modal-content__remember">Запомните меня
+                <a href="#" class="modal-content__restore">Я забил пароль</a>
+            </label>
+
+            <button class="modal-content__btn--login" type="submit">Войти</button>
+            <button class="modal-content__btn--close" type="button">Закрить</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/barbershop.js"></script>
+</body>
+</html>

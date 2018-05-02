@@ -1,0 +1,627 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: url("../img/mobilleApp-img/header.jpg") no-repeat center center;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    height: 760px;
+}
+.header__wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+}
+.header__img {
+    position: absolute;
+    top: 250px;
+    right: 40px;
+}
+.header__img img {
+    width: 420px;
+    height: 650px;
+}
+.header__info {
+    padding: 150px 0 0 40px;
+}
+.header__slogan-main {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.header__slogan-secondarry {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-top: 0;
+}
+.header__list {
+    padding: 0;
+    margin: 50px 0;
+}
+.header__list li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 36px;
+}
+.header__list li::before {
+    content: '>';
+    display: inline-block;
+    margin-right: 20px;
+}
+.header__btn {
+    background: #17d0ac url("../img/mobilleApp-img/download.png") no-repeat 30px center;
+    color: #ffffff;
+    border: none;
+    width: 200px;
+    padding: 15px 0 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header__btn:hover {
+    background-color: #15bc9c;
+}
+.navMain {
+    background-color: #fff;
+    height: 75px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+}
+.navMain__list {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding-top: 5px;
+}
+.navMain__item {
+    text-transform: uppercase;
+}
+.navMain__item a {
+    text-decoration: none;
+    color: #282528;
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: bold;
+    opacity: .6;
+}
+.navMain__item a:hover {
+    opacity: 1;
+}
+.navMain__logo {
+    padding: 25px 0 0 40px;
+}
+.keyFeatures {
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 120px;
+    text-align: center;
+}
+.keyFeatures__title-wrapper {
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.keyFeatures__title-wrapper::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #babdc1;
+    bottom: 38px;
+    left: 360px;
+    right: 360px;
+}
+.ketFeatures__title {
+    color: #1ab798;
+    font-size: 28px;
+    line-height: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 5;
+    background: #fff url("../img/mobilleApp-img/keyFeatures-bg.png") no-repeat bottom center;
+    width: 230px;
+    margin: auto;
+}
+.keyFeatures__slogan {
+    font-size: 18px;
+    line-height: 36px;
+    color: #282528;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 60px;
+}
+.keyFeatures__wrapper {
+    display: flex;
+    text-align: left;
+}
+.keyFeatures__info {
+    display: flex;
+    margin-bottom: 60px;
+}
+.keyFeatures__info img {
+    margin: 25px 30px 0 0 ;
+}
+.keyFeatures__info h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.keyFeatures__info p {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+.video {
+    background-color: #31d4e7;
+    padding: 70px 0;
+}
+.video__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+.video__info {
+    width: 50%;
+}
+.video__info p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+.video__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.video__watch {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #0098cd url("../img/mobilleApp-img/video-watch.png") no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+}
+.video__watch:hover {
+    background-color: #222222;
+}
+.video__watch--apple {
+    background-position: -91px -91px;
+}
+.video__watch--android {
+    background-position: -240px -91px;
+}
+.video__watch--windows {
+    background-position: -390px -91px;
+}
+.team {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 0;
+}
+.team__title-wrapper {
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.team__title-wrapper::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #babdc1;
+    bottom: 38px;
+    left: 400px;
+    right: 400px;
+}
+.team__title {
+    color: #1ab798;
+    font-size: 28px;
+    line-height: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 5;
+    background: #fff url("../img/mobilleApp-img/keyFeatures-bg.png") no-repeat bottom center;
+    width: 200px;
+    margin: auto;
+}
+.team__slogan {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #062033;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: .8;
+    margin-bottom: 100px;
+}
+.team__people {
+    display: flex;
+    justify-content: space-between;
+}
+.team__box {
+    width: 23%;
+    cursor: pointer;
+}
+.team__box:hover .team__name {
+    color: #1ab798;
+}
+.team__img {
+    position: relative;
+    cursor: pointer;
+}
+.team__img img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -3px;
+}
+.team__img:hover .team__img--hover {
+    display: block;
+}
+.team__img--hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(26, 183, 152, 0.8);
+    display: none;
+}
+.team__img--hover p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+}
+.team__name {
+    font-size: 18px;
+    line-height: 24px;
+    color: #062033;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.team__post {
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+    opacity: .56;
+}
+.social__link--team,
+.social__link--contact {
+    width: 44px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.5) url("../img/mobilleApp-img/social.png") no-repeat;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+}
+.social__link--team:hover,
+.social__link--contact:hover {
+    background-color: #000;
+}
+.social__link--tw {
+    background-position: -100px -100px;
+    left: 60px;
+}
+.social__link--fb {
+    background-position: -252px -100px;
+    left: 110px;
+}
+.social__link--g {
+    background-position: -400px -100px;
+    left: 160px;
+}
+/********************************contact social***********************/
+.social__link--contact {
+    position: static;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.social__link--fb--contact {
+    background-position: -100px -100px;
+    background-color: #3b5997;
+}
+.social__link--fb--contact:hover {
+    background-color: #2a406e;
+}
+.social__link--tw--contact {
+    background-position: -252px -100px;
+    background-color: #3ec2f3;
+}
+.social__link--tw--contact:hover {
+    background-color: #35acd8;
+}
+.social__link--g--contact {
+    background-position: -400px -100px;
+    background-color: #e44c41;
+}
+.social__link--g--contact:hover {
+    background-color: #c23e34;
+}
+.reviews {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Open sans', sans-serif;
+}
+.reviews__title-wrapper {
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.reviews__title-wrapper::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #babdc1;
+    bottom: 38px;
+    left: 250px;
+    right: 250px;
+}
+.reviews__title {
+    color: #1ab798;
+    font-size: 28px;
+    line-height: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 5;
+    background: #fff url("../img/mobilleApp-img/keyFeatures-bg.png") no-repeat bottom center;
+    width: 450px;
+    margin: auto;
+    text-transform: uppercase;
+}
+.reviews__item:nth-child(n+1) {
+    display: none;
+}
+.reviews__item p {
+    color: #282528;
+    font-size: 18px;
+    line-height: 36px;
+}
+.reviews__item .reviews__author--name {
+    font-size: 18px;
+    line-height: 24px;
+    color: #062033;
+    font-weight: 600;
+    font-style: normal;
+}
+.reviews__item .reviews__author--post {
+    font-size: 13px;
+    line-height: 18px;
+    color: #646464;
+    margin-bottom: 80px;
+}
+.slider {
+    width: 100%;
+}
+.slider input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+.reviews__author--photo img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50% ;
+    border: 2px solid gray;
+}
+.slider__toggle {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #d4d3d4;
+    cursor: pointer;
+}
+.slider__toggle:hover {
+    background-color: #1ab798;
+}
+#reviews-input-1:checked ~ .slider__toggles label[for="reviews-input-1"],
+#reviews-input-2:checked ~ .slider__toggles label[for="reviews-input-2"],
+#reviews-input-3:checked ~ .slider__toggles label[for="reviews-input-3"],
+#reviews-input-4:checked ~ .slider__toggles label[for="reviews-input-4"] {
+    background-color: #1ab798;
+}
+#reviews-input-1:checked ~ .reviews__list .reviews__item:nth-child(1) {
+    display: block;
+}
+#reviews-input-2:checked ~ .reviews__list .reviews__item:nth-child(2) {
+    display: block;
+}
+#reviews-input-3:checked ~ .reviews__list .reviews__item:nth-child(3) {
+    display: block;
+}
+#reviews-input-4:checked ~ .reviews__list .reviews__item:nth-child(4) {
+    display: block;
+}
+.contact {
+    background: url("../img/mobilleApp-img/contact-bg.jpg") center no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact__wrapper {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 0 0;
+    font-family: 'Open sans', sans-serif;
+}
+.contact__title-wrapper {
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 400px;
+}
+.contact__title-wrapper::before,
+.contact__title-wrapper::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    bottom: 38px;
+    width: 60px;
+}
+.contact__title-wrapper::before {
+    left: 20px;
+}
+.contact__title-wrapper::after {
+    right: 20px;
+}
+.contact__title {
+    color: #fff;
+    font-size: 28px;
+    line-height: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 5;
+    background: transparent url("../img/mobilleApp-img/contact-bg.png") no-repeat bottom center;
+    width: 400px;
+    margin: auto;
+    text-transform: uppercase;
+}
+.contact__info--wrapper {
+    text-align: left;
+    display: flex;
+}
+.contact__info {
+    width: 50%;
+}
+.contact__phone {
+    margin-top: 20px;
+}
+.contact__phone a,
+.contact__mail a {
+    text-decoration: none;
+    color: #bface2;
+    font-size: 14px;
+    line-height: 24px;
+}
+.contact__slogan {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.contact__slogan p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    opacity: .5;
+}
+.contact__form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact__name,
+.contact__email {
+    width: 47.5%;
+    font-size: 16px;
+    line-height: 24px;
+}
+input::-webkit-input-placeholder {
+    color: #c1c1c1;
+}
+input::-moz-placeholder {
+    color: #c1c1c1;
+}
+/* Firefox 19+ */
+input:-moz-placeholder {
+    color: #c1c1c1;
+}
+/* Firefox 18- */
+input:-ms-input-placeholder {
+    color: #c1c1c1;
+}
+textarea::-webkit-input-placeholder {
+    color: #c1c1c1;
+    font-size: 18px;
+    line-height: 24px;
+}
+textarea::-moz-placeholder {
+    color: #c1c1c1;
+    font-size: 18px;
+    line-height: 24px;
+}
+/* Firefox 19+ */
+textarea:-moz-placeholder {
+    color: #c1c1c1;
+    font-size: 18px;
+    line-height: 24px;
+}
+/* Firefox 18- */
+textarea:-ms-input-placeholder {
+    color: #c1c1c1;
+    font-size: 18px;
+    line-height: 24px;
+}
+.contact__message {
+    width: 100%;
+    resize: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+.contact__name,
+.contact__email,
+.contact__message {
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact__btn--wrapper {
+    width: 100%;
+    text-align: right;
+}
+.contact__btn {
+    background-color: #31d4e7;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 24px;
+    width: 170px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+.contact__btn:hover {
+    background-color: #24abbb;
+}
+.contact::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #4e4e4e;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+}
+.contact__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    opacity: .5;
+}

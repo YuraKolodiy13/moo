@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/pink-style.css">
+</head>
+<body>
+    <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="page-header__bg"></div>
+            <div class="page-header__logo">
+                <a href="index.html">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/pink-img/logo-desktop.png">
+                        <source media="(min-width: 768px)"
+                                srcset="img/pink-img/logo-tablet.png">
+                        <img src="img/pink-img/logo-mobile.png" alt="логотип">
+                    </picture>
+                </a>
+            </div>
+            <button type="button" class="main-nav__toggle">Відкрити меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav-items">
+                    <li class="main-nav__item main-nav__item--active">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="pink-photo.html">Фотографии</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="pink-form.html">Конкурс</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="download">
+            <h1 class="download__slogan">
+                Взгляните<br>
+                на жизнь<br>
+                иначе!
+            </h1>
+            <button type="button" class="download-button">Скачать приложение</button>
+            <div class="download-img">
+                <img src="img/pink-img/apple-logo.png" alt="">
+                <img src="img/pink-img/android-logo.png" alt="" class="download-img--android">
+                <img src="img/pink-img/microsoft-logo.png" alt="">
+            </div>
+            <div class="download-description">Доступно для iPhone, iPad, Android,<br>
+                Windows Phone, OS X, Windows 8</div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="info">
+            <h2 class="info__slogan">
+                Устали от серости мегаполиса?<br>
+                <br class="info__hide">
+                Нам есть, что вам<br>
+                предложить!
+            </h2>
+            <div class="info__wrapper">
+                <p class="info__mood">
+                    <img class="info__mood--img" src="img/pink-img/info-img1.png" alt="phone">
+                    <b>Поднимает настроение</b><br>
+                    <br>
+                    Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                <p class="info__change">
+                    <img class="info__change--img" src="img/pink-img/info-img2.png" alt="phone">
+                    <b>Меняет мир вокруг</b><br>
+                    <br>
+                    Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+                <p class="info__newFriends">
+                    <img class="info__newFriends--img" src="img/pink-img/info-img3.png" alt="phone">
+                    <b>Заводит новых друзей</b><br>
+                    <br>
+                    Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+                <img class="info__img--mobTablet" src="img/pink-img/info-tablet.png" alt="phone">
+            </div>
+        </section>
+
+        <section class="diagram">
+            <div class="diagram__img">
+                <img src="img/pink-img/diagram2.png" alt="diagram">
+            </div>
+            <div class="diagram__description">
+                <b>Эффект<br class="diagram__hide">
+                    на 24 часа!</b>
+                <p>Британские ученые провели исследования
+                    и доказали, что положительный эффект
+                    от использования приложения длится
+                    целые сутки!</p>
+                <a href="#">Узнать больше об исследовании</a>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__wrapper slider">
+                <input type="radio" class="slider__input" name="reviews" id="reviews-input-1" checked>
+                <input type="radio" class="slider__input" name="reviews" id="reviews-input-2">
+                <input type="radio" class="slider__input" name="reviews" id="reviews-input-3">
+
+                <div class="reviews__items">
+                    <blockquote class="reviews__item  slider__item">
+                        <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                        <cite class="reviews__author--name">Николай Петров</cite>
+                        <cite class="reviews__author--job">25 лет, водитель трамвая</cite>
+                    </blockquote>
+                    <blockquote class="reviews__item slider__item">
+                        <p>«Крутое приложение Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов! удущей женой в комментариях к выложенной фотографии!»</p>
+                        <cite class="reviews__author--name">Петр Ратиров</cite>
+                        <cite class="reviews__author--job">35 лет, учитель</cite>
+                    </blockquote>
+                    <blockquote class="reviews__item slider__item">
+                        <p>«Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                        <cite class="reviews__author--name">Дмитрий Иванов</cite>
+                        <cite class="reviews__author--job">18 лет, студент</cite>
+                    </blockquote>
+                    <button type="button" class="reviews__prev">Попередній відгук</button>
+                    <button type="button" class="reviews__next">Наступний відгук</button>
+                </div>
+
+                <div class="reviews__toggles slider__toggles">
+                    <label for="reviews-input-1" class="slider__toggle"></label>
+                    <label for="reviews-input-2" class="slider__toggle"></label>
+                    <label for="reviews-input-3" class="slider__toggle"></label>
+                </div>
+            </div>
+        </section>
+
+        <section class="price">
+            <table>
+                <tr>
+                    <th class="price--hide">&nbsp;</th>
+                    <th>БАЗА<span>1,99 USD</span></th>
+                    <th class="price--standart">
+                        СТАНДАРТ<span>3,99 USD</span>
+                        <div class="price--hit">
+                            <img src="img/pink-img/hit.png" alt="">
+                        </div>
+                    </th>
+                    <th>АНЛИМ<span>9,99 USD</span></th>
+                </tr>
+                <tr>
+                    <td class="price--main">Розовый фильтр</td>
+                    <td><img src="img/pink-img/yes.png" alt="yes"></td>
+                    <td><img src="img/pink-img/yes.png" alt="yes"></td>
+                    <td><img src="img/pink-img/yes.png" alt="yes"></td>
+                </tr>
+                <tr>
+                    <td class="price--main">Смайлики</td>
+                    <td><img src="img/pink-img/no.png" alt="no"></td>
+                    <td><img src="img/pink-img/yes.png" alt="yes"></td>
+                    <td><img src="img/pink-img/yes.png" alt="yes"></td>
+                </tr>
+                <tr>
+                    <td class="price--main">Комментарии</td>
+                    <td><img src="img/pink-img/no.png" alt="no"></td>
+                    <td><img src="img/pink-img/no.png" alt="no"></td>
+                    <td><img src="img/pink-img/yes.png" alt="yes"></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="contacts">
+            <div class="contacts__slogan">Остались вопросы?<br>
+                Свяжитесь с нами!</div>
+            <div class="contacts__wrapper">
+                <div class="contacts__tel">
+                    <p>Звоните:</p>
+                    <a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+                </div>
+                <div class="contacts__mail">
+                    <p>Пишите:</p>
+                    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </div>
+                <div class="contacts__adress">
+                    <p>Приезжайте в гости:</p>
+                    <a href="#">ул. Большая<br>
+                        Конюшенная, 19/8
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.7160364694284!2d30.31992902105038!3d59.936853988205584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1495544249101" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="index.html"><img src="img/pink-img/footer-logo.png" alt="">PINK</a>
+        </div>
+        <div class="footer__social">
+            <a href="" class="social-link social-link-twitter">ми в твитере</a>
+            <a href="" class="social-link social-link-fb">ми в фейсбуке</a>
+            <a href="" class="social-link social-link-youtube">ми в ютубе</a>
+        </div>
+        <div class="footer__designed-by">
+            <a href="http://htmlacademy.ru" target="_blank">
+                <p>Разработано<span></span></p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/pink.js"></script>
+</body>
+</html>
